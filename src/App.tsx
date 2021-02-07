@@ -1,11 +1,7 @@
 import React from 'react';
 
-function App() {
-  return (
-    <div>
-      App Running
-    </div>
-  );
-}
+const App: React.FC = () => {
+  return <div>{`App Running ${process.env.REACT_APP_API_URL}`}</div>;
+};
 
 export default App;
