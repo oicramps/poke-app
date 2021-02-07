@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Header from '../../components/Header';
+import Home from '../Home';
 
 const Main: React.FC = () => {
   return (
@@ -8,13 +9,12 @@ const Main: React.FC = () => {
       <Header />
       <Switch>
         <Route exact path='/'>
-          <div>list</div>
+          <Home />
         </Route>
         <Route path='/favorites'>
           <div>favorites</div>
         </Route>
       </Switch>
-      {`Main PAGE ${process.env.REACT_APP_API_URL}`}
     </Router>
   );
 };

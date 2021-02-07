@@ -7,9 +7,6 @@ import { GlobalStyle, theme } from './styles';
 
 const App: React.FC = () => {
   const queryClient = new QueryClient();
-
-  console.log('theme', theme);
-
   return (
     <QueryClientProvider client={queryClient}>
       <ThemeProvider theme={theme}>

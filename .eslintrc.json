@@ -58,6 +58,7 @@
     "react/react-in-jsx-scope": "off",
     "no-use-before-define": "off",
     "react/prop-types": "off",
+    "react/forbid-prop-types": "off",
     "react/jsx-filename-extension": [
       1,
       {

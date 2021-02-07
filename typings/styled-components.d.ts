@@ -15,6 +15,8 @@ declare module 'styled-components' {
       success: string;
       light: string;
       dark: string;
+      'blue-gray-50': string;
+      'blue-gray-400': string;
     };
   }
 }

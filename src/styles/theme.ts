@@ -9,6 +9,8 @@ const theme = {
     success: '#68ae28',
     light: '#FFF',
     dark: '#000',
+    'blue-gray-50': '#f8fafc',
+    'blue-gray-400': '#94a3b8',
   },
 };
 
