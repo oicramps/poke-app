@@ -1,14 +1,22 @@
-import { Preflight, ThemeProvider } from '@xstyled/styled-components';
 import React from 'react';
+import { Preflight, ThemeProvider } from '@xstyled/styled-components';
+import { QueryClient, QueryClientProvider } from 'react-query';
+import { ReactQueryDevtools } from 'react-query/devtools';
+import Main from './containers/Main';
 import { GlobalStyle, theme } from './styles';
 
 const App: React.FC = () => {
+  const queryClient = new QueryClient();
+
   return (
-    <ThemeProvider theme={theme}>
-      <Preflight />
-      <GlobalStyle />
-      <div>{`App Running ${process.env.REACT_APP_API_URL}`}</div>
-    </ThemeProvider>
+    <QueryClientProvider client={queryClient}>
+      <ThemeProvider theme={theme}>
+        <Preflight />
+        <GlobalStyle />
+        <Main />
+        <ReactQueryDevtools initialIsOpen={false} />
+      </ThemeProvider>
+    </QueryClientProvider>
   );
 };
 
