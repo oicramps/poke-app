@@ -8,8 +8,9 @@ const theme = {
     danger: '#CC0000',
     success: '#68ae28',
     light: '#FFF',
-    dark: '#000',
+    dark: '#262626',
     'blue-gray-50': '#f8fafc',
+    'blue-gray-200': '#e2e8f0',
     'blue-gray-400': '#94a3b8',
   },
 };
