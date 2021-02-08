@@ -8,7 +8,8 @@ export default createGlobalStyle`
   body {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.6rem;
-    margin: 50px;
+    margin: 50px auto;
+    max-width: 750px;
   }
 
   input,
