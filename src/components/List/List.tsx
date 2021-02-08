@@ -1,9 +1,7 @@
 import { x } from '@xstyled/styled-components';
 import React from 'react';
 import { useQueries } from 'react-query';
-import IPokemonItem from '../../interfaces/PokemonItem';
 import IPokemonListItem from '../../interfaces/PokemonListItem';
-import api from '../../services/api';
 import pokemonService from '../../services/pokemonService';
 import ListItem from '../ListItem';
 
