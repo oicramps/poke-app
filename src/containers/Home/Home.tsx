@@ -10,7 +10,7 @@ const Home: React.FC = () => {
 
   if (isLoading) return <div>loading...</div>;
 
-  return <List pokemons={data?.data.results} />;
+  return <List pokemons={data?.results} />;
 };
 
 export default Home;
