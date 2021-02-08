@@ -1,6 +1,5 @@
 import { x } from '@xstyled/styled-components';
 import React from 'react';
-import { NavLink } from 'react-router-dom';
 import { AiOutlineHome, AiOutlineStar } from 'react-icons/ai';
 import logo from '../../assets/images/logo.svg';
 import { Navbar, NavbarItem } from './styled';
